@@ -4,8 +4,17 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 development:
-  adapter: sqlite3
-  database: db/development.sqlite3
+#  adapter: sqlite3
+#  database: db/development.sqlite3
+#  pool: 5
+#  timeout: 5000
+  adapter: postgresql
+  encoding: unicode
+  database: da6epvdn3ppnq3
+  host: ec2-54-243-227-29.compute-1.amazonaws.com
+  username: zitirnlzpqyzzd
+  password: FeQUw4hG4VOco-S8gDnSXKL_Na
+  port: 5433
   pool: 5
   timeout: 5000
 
@@ -19,7 +28,17 @@ test:
   timeout: 5000
 
 production:
-  adapter: sqlite3
-  database: db/production.sqlite3
+# adapter: sqlite3
+# database: db/production.sqlite3
+# pool: 5
+# timeout: 5000
+
+  adapter: postgresql
+  encoding: unicode
+  database: da6epvdn3ppnq3
+  host: ec2-54-243-227-29.compute-1.amazonaws.com
+  username: zitirnlzpqyzzd
+  password: FeQUw4hG4VOco-S8gDnSXKL_Na
+  port: 5433
   pool: 5
   timeout: 5000
